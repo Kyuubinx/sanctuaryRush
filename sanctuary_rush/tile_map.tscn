@@ -1,0 +1,143 @@
+[gd_scene load_steps=5 format=3 uid="uid://covbj7my7t17h"]
+
+[ext_resource type="Texture2D" uid="uid://ca5b2cwadq1rc" path="res://sprites/platform-verylarge.png" id="1_u37gj"]
+[ext_resource type="PackedScene" uid="uid://cirmt57y18wyp" path="res://spike.tscn" id="2_y2gyc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1f4kl"]
+texture = ExtResource("1_u37gj")
+texture_region_size = Vector2i(115, 112)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_mak7h"]
+tile_size = Vector2i(115, 112)
+sources/0 = SubResource("TileSetAtlasSource_1f4kl")
+
+[node name="TileMap" type="TileMap"]
+tile_set = SubResource("TileSet_mak7h")
+format = 2
+layer_0/tile_data = PackedInt32Array(393216, 262144, 0, 393217, 262144, 0, 393218, 262144, 0, 393219, 262144, 0, 393220, 262144, 0, 393221, 262144, 0, 393222, 65536, 0, 393223, 65536, 0, 393224, 65536, 0, 393225, 65536, 0, 393226, 65536, 0, 393227, 65536, 0, 393228, 65536, 0, 393229, 65536, 0, 393230, 65536, 0, 393231, 65536, 0, 393232, 65536, 0, 393233, 65536, 0, 393234, 65536, 0, 393235, 65536, 0, 393236, 65536, 0, 393237, 65536, 0, 393238, 65536, 0, 393239, 65536, 0, 393240, 65536, 0, 393241, 65536, 0, 393242, 65536, 0, 393243, 65536, 0, 393244, 65536, 0, 393245, 65536, 0, 393246, 65536, 0, 393247, 65536, 0, 393248, 65536, 0, 393249, 65536, 0, 393250, 65536, 0, 393251, 65536, 0, 393252, 65536, 0, 393253, 65536, 0, 393254, 65536, 0, 393255, 65536, 0, 393256, 65536, 0, 393257, 65536, 0, 393258, 65536, 0, 393259, 65536, 0, 393260, 65536, 0, 393261, 65536, 0, 393262, 65536, 0, 393263, 65536, 0, 393264, 65536, 0, 393265, 65536, 0, 393266, 65536, 0, 393267, 65536, 0, 393268, 65536, 0, 393269, 65536, 0, 393270, 65536, 0, 393271, 65536, 0, 393272, 65536, 0, 393273, 65536, 0, 393274, 65536, 0, 393275, 65536, 0, 393276, 65536, 0, 393277, 65536, 0, 393278, 65536, 0, 393279, 65536, 0, 393280, 65536, 0, 393281, 65536, 0, 393282, 65536, 0, 393283, 65536, 0, 393284, 65536, 0, 393285, 65536, 0, 393286, 65536, 0, 393287, 65536, 0, 393288, 65536, 0, 393289, 65536, 0, 393290, 65536, 0, 393291, 65536, 0, 393292, 65536, 0, 393293, 65536, 0, 393294, 65536, 0, 393295, 65536, 0, 393296, 65536, 0, 393297, 65536, 0, 393298, 65536, 0, 393299, 65536, 0, 393300, 65536, 0, 393301, 65536, 0, 393302, 65536, 0, 393303, 65536, 0, 393304, 65536, 0, 393305, 65536, 0, 393306, 65536, 0, 393307, 65536, 0, 393308, 65536, 0, 393309, 65536, 0, 393310, 65536, 0, 393311, 65536, 0, 393312, 65536, 0, 393313, 65536, 0, 393314, 65536, 0, 393315, 65536, 0, 393316, 65536, 0, 393317, 65536, 0, 393318, 65536, 0, 393319, 65536, 0, 393320, 65536, 0, 393321, 65536, 0, 393322, 65536, 0, 393323, 65536, 0, 393324, 65536, 0, 393325, 65536, 0, 393326, 65536, 0, 393327, 65536, 0, 393328, 65536, 0, 393329, 65536, 0, 393330, 65536, 0, 393331, 65536, 0, 393332, 65536, 0, 393333, 65536, 0, 393334, 65536, 0, 393335, 65536, 0, 393336, 65536, 0, 393337, 65536, 0, 393338, 65536, 0, 393339, 65536, 0, 393340, 65536, 0, 393341, 65536, 0, 393342, 65536, 0, 393343, 65536, 0, 393344, 65536, 0, 393345, 65536, 0, 393346, 65536, 0, 393347, 65536, 0, 393348, 65536, 0, 393349, 65536, 0, 393350, 65536, 0, 393351, 65536, 0)
+metadata/_edit_horizontal_guides_ = [787.0, -3.0]
+metadata/_edit_vertical_guides_ = [15635.0, -2.0]
+
+[node name="Area2D" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(545, 0)
+
+[node name="Area2D2" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(1101, 0)
+
+[node name="Area2D3" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(1485, -2)
+
+[node name="Area2D4" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(2079, 0)
+
+[node name="Area2D5" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(2263, -2)
+
+[node name="Area2D6" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(2687, 0)
+
+[node name="Area2D7" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(3337, -2)
+
+[node name="Area2D8" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(3567, 0)
+
+[node name="Area2D9" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(3731, -2)
+
+[node name="Area2D10" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(3929, -2)
+
+[node name="Area2D11" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(3985, -2)
+
+[node name="Area2D12" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(4451, -2)
+
+[node name="Area2D13" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(4839, -2)
+
+[node name="Area2D14" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(5179, -2)
+
+[node name="Area2D15" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(5815, 0)
+
+[node name="Area2D16" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(6423, 0)
+
+[node name="Area2D17" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(6769, -2)
+
+[node name="Area2D18" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(7189, 0)
+
+[node name="Area2D19" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(7721, 0)
+
+[node name="Area2D20" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(8205, 2)
+
+[node name="Area2D21" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(8623, 0)
+
+[node name="Area2D22" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(8891, -2)
+
+[node name="Area2D23" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(9219, 0)
+
+[node name="Area2D24" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(9595, 2)
+
+[node name="Area2D25" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(10067, 4)
+
+[node name="Area2D26" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(10599, 2)
+
+[node name="Area2D27" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(11093, 2)
+
+[node name="Area2D28" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(11441, 8)
+
+[node name="Area2D29" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(11895, 2)
+
+[node name="Area2D30" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(12469, 2)
+
+[node name="Area2D31" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(13057, 2)
+
+[node name="Area2D32" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(13289, 4)
+
+[node name="Area2D33" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(13531, 0)
+
+[node name="Area2D34" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(13729, 2)
+
+[node name="Area2D35" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(13923, 2)
+
+[node name="Area2D36" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(14201, 4)
+
+[node name="Area2D37" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(14485, 2)
+
+[node name="Area2D38" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(14753, 2)
+
+[node name="Area2D39" parent="." instance=ExtResource("2_y2gyc")]
+position = Vector2(15085, 2)
